@@ -1,0 +1,15 @@
+/* LogementsMenu.css */
+
+.logements-menu {
+    padding: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Gap between grid items */
+  }
+  
+  .logements-menu h2 {
+    text-align: center;
+  }
