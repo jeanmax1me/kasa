@@ -1,17 +1,56 @@
 /* LogementsCard.css */
 
+/* Default styles */
 .logements-card {
-    width: 340px;
-    height: 340px;
-    border-radius: 10px;
-    background-color: #FF6060;
-    overflow: hidden;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 340px;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 960px) {
+  .logements-card {
+   max-width: 100%;
   }
-  
-  .card-content {
-    padding: 0 20px 20px; /* 20px padding left, right, and bottom */
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
+}
+
+.card-cover {
+  position: relative;
+}
+
+.card-cover img {
+  width: 100%;
+  height: auto;
+  min-height: 340px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+  /* Media query for mobile screens */
+  @media screen and (max-width: 460px) {
+   .card-cover img {
+    min-height: 255px;
+    }
+    .logements-card {
+      min-width: 200px;
+    }
   }
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #FFF;
+  border-radius: 0 0 10px 10px;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
