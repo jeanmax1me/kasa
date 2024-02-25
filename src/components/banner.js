@@ -7,7 +7,7 @@ const Banner = () => {
       <div className="banner">
         <img src={bannerImage} alt="Banner" className="banner-image" />
         <div className="banner-text">
-          Chez vous, partout et ailleurs
+          Chez vous, <span className="text-mobile-split">partout et ailleurs</span> 
         </div>
       </div>
     );

@@ -9,6 +9,12 @@
   min-width: 340px;
 }
 
+@media screen and (max-width: 1420px) {
+  .logements-card {
+    max-width: 100%;
+  }
+}
+
 /* Media query for mobile screens */
 @media screen and (max-width: 960px) {
   .logements-card {
