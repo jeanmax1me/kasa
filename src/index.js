@@ -9,7 +9,7 @@ import "./css/global.css"
 import ErrorPage from "./components/error";
 import Header from './components/header';
 import Footer from './components/footer';
-import {Banner1, Banner2} from './components/banner';
+import { Banner1, Banner2 } from './components/banner';
 import LogementsMenu from './components/logements-menu';
 import Layout from './components/layout';
 import About from './components/about';
@@ -27,7 +27,14 @@ const router = createBrowserRouter([
         <Footer />
       </>
     ),
-    errorElement: <ErrorPage />,
+    errorElement:
+      <>
+        <Layout>
+          <Header />
+          <ErrorPage />
+        </Layout>
+        <Footer />
+      </>
   },
   {
     path: "/about",
