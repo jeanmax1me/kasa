@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import "./css/global.css"
 import ErrorPage from "./components/error";
 import Header from './components/header';
 import Footer from './components/footer';
@@ -16,12 +17,14 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <Layout>
-        <Header />
-        <Banner />
-        <LogementsMenu />
+      <>
+        <Layout>
+          <Header />
+          <Banner />
+          <LogementsMenu />
+        </Layout>
         <Footer />
-      </Layout>
+      </>
     ),
     errorElement: <ErrorPage />,
   },
