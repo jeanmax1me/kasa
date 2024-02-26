@@ -94,3 +94,9 @@
 .nav ul li a:hover {
   text-decoration-line: underline;
 }
+
+.nav ul li a.active {
+  /* Define styles for the active link */
+  text-decoration: underline;
+  /* You can adjust other styles like color, font weight, etc. */
+}

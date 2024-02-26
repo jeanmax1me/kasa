@@ -9,9 +9,10 @@ import "./css/global.css"
 import ErrorPage from "./components/error";
 import Header from './components/header';
 import Footer from './components/footer';
-import Banner from './components/banner';
+import {Banner1, Banner2} from './components/banner';
 import LogementsMenu from './components/logements-menu';
 import Layout from './components/layout';
+import About from './components/about';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
       <>
         <Layout>
           <Header />
-          <Banner />
+          <Banner1 />
           <LogementsMenu />
         </Layout>
         <Footer />
@@ -28,6 +29,19 @@ const router = createBrowserRouter([
     ),
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/about",
+    element: (
+      <>
+        <Layout>
+          <Header />
+          <Banner2 />
+          <About />
+        </Layout>
+        <Footer />
+      </>
+    )
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

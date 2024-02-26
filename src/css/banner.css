@@ -12,9 +12,16 @@
   width: 100%;
   max-width: 100%;
   border-radius: 25px;
-  filter: brightness(60%);
   object-fit: cover;
   min-height: 111px;
+}
+
+.banner1 {
+  filter: brightness(60%);
+}
+
+.banner2 {
+  filter: brightness(70%);
 }
 
 .banner-text {
@@ -38,10 +45,19 @@
     letter-spacing: 0em;
     text-align: left;
   }
+
   .banner {
     margin-top: 19px;
   }
+
   .text-mobile-split {
     display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .banner-text {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
