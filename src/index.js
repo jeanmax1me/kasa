@@ -13,6 +13,8 @@ import { Banner1, Banner2 } from './components/banner';
 import LogementsMenu from './components/logements-menu';
 import Layout from './components/layout';
 import About from './components/about';
+import LogementsPage from './components/logements-page';
+
 
 const router = createBrowserRouter([
   {
@@ -44,6 +46,18 @@ const router = createBrowserRouter([
           <Header />
           <Banner2 />
           <About />
+        </Layout>
+        <Footer />
+      </>
+    )
+  },
+  {
+    path: "/logements/:id", // Dynamic route for logements
+    element: (
+      <>
+        <Layout>
+          <Header />
+          <LogementsPage />
         </Layout>
         <Footer />
       </>

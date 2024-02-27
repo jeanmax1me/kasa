@@ -1,0 +1,12 @@
+.logement-infos {
+    background: forestgreen;
+}
+ul, li {
+    list-style: none; /* Removes bullet points or numbers */
+    padding: 0; /* Optional: Removes default padding */
+    margin: 0; /* Optional: Removes default margin */
+}
+
+.logement-host-and-rating {
+    background: chocolate;
+}

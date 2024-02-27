@@ -12,6 +12,7 @@ const LogementsMenu = () => {
         {logementsData.map((logement) => (
           <LogementsCard
             key={logement.id}
+            id={logement.id}
             title={logement.title}
             cover={logement.cover}
           />
