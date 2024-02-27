@@ -9,11 +9,11 @@ const LogementsDetails = ({ logement }) => {
     return (
         <div className="logement-details">
             <div className="logement-infos">
-                <h2>{title}</h2>
-                <p>{location}</p>
+                <h2 className="logement-title">{title}</h2>
+                <p className="logement-location">{location}</p>
                 <ul>
                     {tags.map((tag, index) => (
-                        <li key={index}>{tag}</li>
+                        <li key={index} className="logement-tags">{tag}</li>
                     ))}
                 </ul>
             </div>

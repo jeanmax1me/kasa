@@ -1,12 +1,46 @@
-.logement-infos {
-    background: forestgreen;
+.logement-details {
+    font-family: Montserrat;
 }
-ul, li {
-    list-style: none; /* Removes bullet points or numbers */
-    padding: 0; /* Optional: Removes default padding */
-    margin: 0; /* Optional: Removes default margin */
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .logement-host-and-rating {
-    background: chocolate;
+    padding-bottom: 20px;
+}
+
+.logement-title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6060;
+}
+
+.logement-location {
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.logement-tags {
+    height: 25px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: inline-block;
+    padding: 0 22px;
+    line-height: 25px;
 }
