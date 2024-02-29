@@ -1,7 +1,7 @@
 {
   "name": "kasa",
   "version": "0.1.0",
-  "homepage": "https://jeanmax1me.github.io",
+  "homepage": "https://jeanmax1me.github.io/kasa",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
