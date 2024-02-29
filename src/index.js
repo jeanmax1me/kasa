@@ -6,61 +6,31 @@ import {
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import "./css/global.css"
-import ErrorPage from "./components/error";
-import Header from './components/header';
-import Footer from './components/footer';
-import { Banner1, Banner2 } from './components/banner';
-import LogementsMenu from './components/logements-menu';
-import Layout from './components/layout';
-import About from './components/about';
-import LogementsPage from './components/logements-page';
+import AboutPage from './pages/aboutpage';
+import ErrorPage from './pages/errorpage';
+import HomePage from './pages/homepage';
+import LogementPage from './pages/logementpage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <>
-        <Layout>
-          <Header />
-          <Banner1 />
-          <LogementsMenu />
-        </Layout>
-        <Footer />
-      </>
+      <HomePage />
     ),
     errorElement:
-      <>
-        <Layout>
-          <Header />
-          <ErrorPage />
-        </Layout>
-        <Footer />
-      </>
+      <ErrorPage />
   },
   {
     path: "/about",
     element: (
-      <>
-        <Layout>
-          <Header />
-          <Banner2 />
-          <About />
-        </Layout>
-        <Footer />
-      </>
+      <AboutPage />
     )
   },
   {
     path: "/logements/:id", // Dynamic route for logements
     element: (
-      <>
-        <Layout>
-          <Header />
-          <LogementsPage />
-        </Layout>
-        <Footer />
-      </>
+      <LogementPage />
     )
   }
 ]);

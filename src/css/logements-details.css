@@ -33,7 +33,7 @@ li {
 
 .logement-tags {
     height: 25px;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: #FF6060;
     font-size: 14px;
     font-weight: 700;
@@ -43,12 +43,14 @@ li {
     display: inline-block;
     padding: 0 22px;
     line-height: 25px;
+    width: auto;
 }
 
 ul {
     display: flex;
     gap: 10px;
     padding-bottom: 24px;
+    flex-wrap: wrap;
 }
 
 .logement-host {
@@ -89,6 +91,11 @@ ul {
     .logement-host {
         order: 2;
         padding: 0;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: right;
     }
 
     .logement-title {
@@ -99,12 +106,21 @@ ul {
     ul {
         padding-bottom: 16px;
     }
+
     .logement-collapses {
         flex-direction: column;
         gap: 20px;
         padding-bottom: 27px;
     }
+
     .logement-tags {
         display: flex
+    }
+    .logement-rating svg {
+        width: 13px;
+        height: 13px;
+    }
+    .logement-rating {
+        gap: 7px;
     }
 }
