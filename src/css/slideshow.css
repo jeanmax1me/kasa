@@ -1,9 +1,8 @@
 .slide-image {
   max-height: 415px;
-  /* Limit the height of the image */
   width: 100%;
   object-fit: cover;
-  /* Maintain aspect ratio and cover entire container */
+  border-radius: 25px;
 }
 
 .slide-container {
@@ -38,16 +37,40 @@
     width: 24px;
     height: 24px;
   }
+
   .prev {
     left: 0;
     padding: 0;
     place-items: flex-start;
     align-items: center;
   }
+
   .next {
     right: 0;
     padding: 0;
     place-items: flex-end;
     align-items: center;
+  }
+}
+
+.slide-counter {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  z-index: 100;
+  color: white;
+}
+
+@media (max-width: 960px) {
+  .slide-counter {
+      display: none;
   }
 }

@@ -8,6 +8,21 @@ const Collapse = ({ title, content }) => {
     setIsCollapsed(!isCollapsed);
   };
 
+    const renderContent = () => {
+      if (Array.isArray(content)) {
+        return (
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        );
+      } else {
+        return <p>{content}</p>;
+      }
+    };
+  
+
   return (
     <div className="collapse">
       <div className="collapse-header" onClick={toggleCollapse}>
@@ -27,7 +42,7 @@ const Collapse = ({ title, content }) => {
           </svg>
         </div>
       </div>
-      {!isCollapsed && <div className="collapse-content">{content}</div>}
+      {!isCollapsed && <div className="collapse-content">{renderContent()}</div>}
     </div>
   );
 };
